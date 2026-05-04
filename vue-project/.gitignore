@@ -1,4 +1,3 @@
-# Logs
 logs
 *.log
 npm-debug.log*
@@ -38,17 +37,8 @@ __screenshots__/
 # Vite
 *.timestamp-*-*.mjs
 
-.env
-
 #password
-#api/stream/password.php
-backend-Daniel/config.php
+api/stream/password.php
 
-#include the node modules 
-
-
-#db
-src/backend-Daniel/db.php
-node_modules/
-dist/
-api/vendor/
+#evn
+*.env
