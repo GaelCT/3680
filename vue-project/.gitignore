@@ -37,3 +37,18 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+.env
+
+#password
+#api/stream/password.php
+backend-Daniel/config.php
+
+#include the node modules 
+
+
+#db
+backend-Daniel/db.php
+node_modules/
+dist/
+api/vendor/
