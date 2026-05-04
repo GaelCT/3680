@@ -42,3 +42,5 @@ api/stream/password.php
 
 #evn
 *.env
+
+vendor/
