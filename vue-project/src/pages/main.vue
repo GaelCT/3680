@@ -15,6 +15,7 @@ import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { VBtn } from 'vuetify/components';
 // import enter from '../enter.js';
+import { useEventSource } from '@vueuse/core'; 
 
 
 const router = useRouter();
