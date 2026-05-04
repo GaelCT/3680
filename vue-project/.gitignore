@@ -1,4 +1,3 @@
-# Logs
 logs
 *.log
 npm-debug.log*
@@ -37,3 +36,9 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+#password
+api/stream/password.php
+
+#evn
+*.env
