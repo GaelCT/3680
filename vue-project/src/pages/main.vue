@@ -15,7 +15,7 @@ import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { VBtn } from 'vuetify/components';
 // import enter from '../enter.js';
-import { useEventSource } from '@vueuse/core'; 
+// import { useEventSource } from '@vueuse/core'; 
 
 
 const router = useRouter();
@@ -24,7 +24,7 @@ const message = ref('');
 const users = ref([]);
 const chatHistory = ref([]);
 
-const { status, data, error, close } = useEventSource('/api/sse-endpoint');
+// const { status, data, error, close } = useEventSource('/api/sse-endpoint');
 
 //const connection = new EventSource("davalos.cs3680.com/api/sse-endpoint");
 onMounted(async () => {
@@ -51,7 +51,7 @@ const logOut = () => {
 
 
 // Event Source
-const EndpointA = new EventSource('https://davalos.cs3680.com/stream.php', {
+const EndpointA = new EventSource('https://gaelc.cs3680.com/messages/stream.php', {
     withCredentials: true
 });
 
@@ -73,7 +73,7 @@ const packageMessageAnduserID = () => {
  //probably load the entire thing in a different file
  async function enter(){
     try{
-        const response = await fetch('https://davalos.cs3680.com/dro/ProjectCMPS3680/sendMessage.php', {
+        const response = await fetch('https://gaelc.cs3680.com/messages/post_message.php', {
         method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

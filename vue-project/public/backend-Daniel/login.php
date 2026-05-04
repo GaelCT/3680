@@ -1,8 +1,10 @@
 <?php
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: http://davalos.cs3680.com');
+header('Access-Control-Allow-Origin: http://gaelc.cs3680.com');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: POST');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
 require_once __DIR__ . '/vendor/autoload.php'; //i added this
 require 'config.php';
@@ -63,7 +65,7 @@ singup.php
 
 <?php
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: https://davalos.cs3680.com'); // i changed http://localhost:5173
+header('Access-Control-Allow-Origin: https://gaelc.cs3680.com'); // i changed http://localhost:5173
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: POST');
 
@@ -111,7 +113,7 @@ getUsers.php
 <?php 
 
 header('Content-Type: application/json');
-header('Acess-Control-Allow-Origin: http://davalos.cs3680.com');
+header('Acess-Control-Allow-Origin: http://gaelc.cs3680.com');
 header('Access-Control-Allow-headers: Content-Type, Authorization');
 
 require 'db.php';

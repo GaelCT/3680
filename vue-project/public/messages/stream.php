@@ -1,13 +1,16 @@
 <?php
 //remove the blocks between each side. 
-header("Access-Control-Allow-Origin: https://jescalante.cs3680.com");
+header("Access-Control-Allow-Origin: https://gaelc.cs3680.com");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
 header('Connection: keep-alive');
-header('')
-require_once('config.php');
-require_once('loadENV.php');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header('X-Accel-Buffering: no');
+
+require_once(__DIR__ .'/../backend-Daniel/config.php');
+require_once(__DIR__ .'/loadENV.php');
 //list them all out
 $servername = $_ENV['server'];
 $username   = $_ENV['user'];
